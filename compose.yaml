@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: bilan_adonis
+      POSTGRES_PASSWORD: bilan_adonis
+      POSTGRES_DB: bilan_adonis
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      # - ./postgres/init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    networks:
+      - adonis
+    
+  app:
+    build: .
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./build/.env:/app/.env
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=8080
+    command: ['node', './bin/server.js']
+    networks: 
+      - adonis
+
+
+volumes:
+  postgres:
+
+networks:
+  adonis:
+    driver: bridge

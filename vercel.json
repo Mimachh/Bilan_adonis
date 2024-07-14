@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "node ace migration:run --force && node ace build --production",
+  "cleanUrls": true,
+  "framework": null,
+  "installCommand": "npm install",
+  "outputDirectory": "build/public",
+  "public": true,
+  "regions": ["cdg1"],
+  "functionFailoverRegions": ["iad1", "sfo1"],
+  "trailingSlash": false
+}
