@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "node ace migration:run --force && node ace build --production",
+  "buildCommand": "node ace build --production",
   "cleanUrls": true,
   "framework": null,
   "installCommand": "npm install",
