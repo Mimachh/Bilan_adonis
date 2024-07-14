@@ -6,7 +6,7 @@
   "installCommand": "npm install",
   "outputDirectory": "build/public",
   "public": true,
-  "regions": ["cdg1"],
+
   "functionFailoverRegions": ["iad1", "sfo1"],
   "trailingSlash": false
 }
