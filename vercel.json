@@ -1,10 +1,14 @@
 {
-    "version": 2,
-    "buildCommand": "node ace build --ignore-ts-errors",
-    "cleanUrls": true,
-    "framework": null,
-    "installCommand": "npm install",
-    "outputDirectory": "build",
-    "public": true,
-    "trailingSlash": false
-  }
+  "buildCommand": "node ace build --ignore-ts-errors",
+  "framework": null,
+  "installCommand": "npm install",
+  "outputDirectory": "build",
+  "public": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/boot/route.js"
+    }
+  ]
+}
