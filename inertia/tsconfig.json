@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
+    "allowImportingTsExtensions": false,
     "jsx": "react-jsx",
     "paths": {
       "~/*": ["./*"],
