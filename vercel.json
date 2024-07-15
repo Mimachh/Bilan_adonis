@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node ace build --ignore-ts-errors",
+  "buildCommand": "node ace build",
   "framework": null,
   "installCommand": "npm install",
   "outputDirectory": "build",
