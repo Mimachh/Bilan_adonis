@@ -4,10 +4,10 @@ import { Head } from '@inertiajs/react'
 import { Button } from '~/components/ui/button'
 
 type HomeProps = PageProps & {
-  user: User
+  // user: User
 }
 export default function Home(props: HomeProps) {
-  const { user } = props
+  // const { user } = props
 
   return (
     <>
@@ -15,7 +15,7 @@ export default function Home(props: HomeProps) {
 
       <div className="container">
         <div className="title">AdonisJS  x Inertia x React</div>
-    {user && <div>Connected as {user.email}</div>}
+    {/* {user && <div>Connected as {user.email}</div>} */}
     <Button>Coucou</Button>
 
   
