@@ -4,5 +4,11 @@
   "installCommand": "npm install",
   "outputDirectory": "build",
   "public": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/boot/route.js"
+    }
+  ]
 }
