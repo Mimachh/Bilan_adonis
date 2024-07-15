@@ -8,6 +8,5 @@
       "@/*": ["./*"]
     }
   },
-  "exclude": ["./inertia/**/*", "node_modules", "build"],
-  "module": "EsNext"
+  "exclude": ["./inertia/**/*", "node_modules", "build"]
 }
