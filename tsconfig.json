@@ -8,9 +8,5 @@
       "@/*": ["./*"]
     }
   },
-  "ts-node": {
-    "esm": true,
-    "transpileOnly": true
-  },
   "exclude": ["./inertia/**/*", "node_modules", "build"]
 }
