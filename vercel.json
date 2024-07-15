@@ -8,7 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/boot/route.js"
+      "dest": "build/bin/server.js"
     }
   ]
 }
