@@ -21,14 +21,25 @@ services:
       - '8080:8080'
     volumes:
       - ./build/.env:/app/.env
-    # environment:
-    #   - NODE_ENV=production
-    #   - HOST=0.0.0.0
-    #   - PORT=8080
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=8080
     command: ['node', './bin/server.js']
     networks: 
       - adonis
 
+  nginx:
+    image: nginx:latest
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx/nginx-http.conf:/etc/nginx/conf.d/nginx-http.conf
+      # - ./nginx/nginx-https.conf:/etc/nginx/conf.d/nginx-https.conf
+    depends_on:
+      - app
+    networks:
+      - adonis
 
 volumes:
   postgres:

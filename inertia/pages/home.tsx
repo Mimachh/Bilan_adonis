@@ -1,12 +1,14 @@
-import { User } from '#auth/models/user'
-import { PageProps } from '@adonisjs/inertia/types'
+// import { User } from '#auth/models/user'
+// import { PageProps } from '@adonisjs/inertia/types'
 import { Head } from '@inertiajs/react'
 import { Button } from '~/components/ui/button'
 
-type HomeProps = PageProps & {
-  // user: User
-}
-export default function Home(props: HomeProps) {
+// type HomeProps = PageProps & {
+//   user: User
+// }
+export default function Home(
+  // props: HomeProps
+) {
   // const { user } = props
 
   return (
